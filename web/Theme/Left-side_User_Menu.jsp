@@ -1,4 +1,12 @@
-  <aside class="main-sidebar">
+<%! 
+ int pageCount = 0;
+ void addCount() {
+   pageCount++;
+ }
+%>
+<% addCount(); %>
+
+<aside class="main-sidebar">
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
           <!-- Sidebar user panel -->
@@ -9,7 +17,8 @@
             <div class="pull-left info">
               <p>Kishan Ajudiya</p>
 
-              
+             <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+             <p>This site has been visited <%= pageCount %> times.</p>
             </div>
           </div>
           <!-- search form -->
@@ -25,18 +34,21 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li class="active treeview">
-              <a href="#">
-                <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <!--<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>-->
-                <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard</a></li>
-              </ul>
-            </li>
+            
+             
+              
+                <li>
+                  <a href="index2.html">
+                    <i class="fa fa-circle-o"></i><span> Dashboard</span></a>
+                  </li>
+              <li>
+                <a href="index2.html">
+                  <i class="fa fa-circle-o"></i><span> Profile</span>
+                </a></li>
+            
             <li>
               <a href="Exam_Home.jsp">
-                <i class="fa fa-th"></i> <span>Widgets</span> <small class="label pull-right bg-green">new</small>
+                <i class="fa fa-book"></i> <span>Exam</span> 
               </a>
             </li>
             

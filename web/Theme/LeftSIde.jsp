@@ -16,8 +16,8 @@
             </div>
             <div class="pull-left info">
               <p>Kishan Ajudiya</p>
-
-              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+               
+              <p>This site has been visited <%= pageCount %> times.</p>
             </div>
           </div>
           <!-- search form -->
