@@ -88,7 +88,7 @@
                     <i class="fa fa-eye" style="transform:translate(0px, -10px)"></i> View
                   </a>
                 </div><!-- /.box-body --></td>
-                        </td>
+                       
                       </tr>
                       
                     </tbody>
