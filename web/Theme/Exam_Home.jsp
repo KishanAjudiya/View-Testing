@@ -23,10 +23,6 @@
 
       <!-- Code of left side user panel -->
       
-
-   
-
-
       <!-- /Code of left side user panel -->
 
 
