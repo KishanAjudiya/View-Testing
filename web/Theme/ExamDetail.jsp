@@ -56,16 +56,33 @@
                   <h3 class="box-title">Exam Detail</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <form role="form">
+                
                   <div class="box-body">
                     <div class="form-group">
                       <label>Exam Title</label>
                       <input type="text" class="form-control" id="exam_title" placeholder="Enter ..."/>
                     </div>
-                    <div class="form-group">
-                      <label>Exam Descrption</label>
-                      <textarea class="form-control" id="exam_desc" rows="3" placeholder="Enter ..."></textarea>
-                    </div>
+                   
+                      
+                      <div class='box box-info'>
+                <div class='box-header'>
+                  <h3 class='box-title'>Exam Instruction</h3>
+                  <!-- tools box -->
+                  <div class="pull-right box-tools">
+                    <button class="btn btn-info btn-sm" data-widget='collapse' data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+                    
+                  </div><!-- /. tools -->
+                </div><!-- /.box-header -->
+                <div class='box-body pad'>
+                  
+                    <textarea id="editor1" name="editor1" rows="10" cols="80">
+                                            
+                    </textarea>
+                  
+                </div>
+              </div>
+                      
+                      
                     <div class="form-group">
                       <label>Number of Questions</label>
                       <input type="text" class="form-control" id="no_of_ques" placeholder="Enter ..."/>
