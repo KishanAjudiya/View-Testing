@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+</head>
+<body>
+
+<p id="p1">This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button id="btn1">Replace the first p element with new text</button>
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#p1").replaceWith("Hello world!");
+    });
+});
+</script>
+
+</body>
+</html>
+<div id="p1">This is a paragraph.</div>
+<button id="btn1">Replace the first p element with new text</button>
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#p1").replaceWith("Hello world!");
+    });
+});
+</script>
