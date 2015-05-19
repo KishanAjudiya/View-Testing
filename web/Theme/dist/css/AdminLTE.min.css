@@ -2390,8 +2390,8 @@ a:hover,a:active,a:focus{
 	position:relative;
 	padding:15px 5px;
 	margin:0 0 10px 10px;
-	min-width:80px;
-	height:60px;
+	min-width:40px;
+	height:20px;
 	text-align:center;
 	color:#666;
 	border:1px solid #ddd;
@@ -3268,6 +3268,7 @@ table.text-center,table.text-center td,table.text-center th{
 .login-page,.register-page{
 	background:#d2d6de;
 	background-image: url(abc.jpg);
+	background-repeat: no-repeat;
 }
 
 .login-box,.register-box{
