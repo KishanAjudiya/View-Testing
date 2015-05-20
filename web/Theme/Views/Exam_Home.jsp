@@ -45,7 +45,7 @@
                 <div class="icon">
                   <i class="glyphicon glyphicon-edit"></i>
                 </div>
-                <a href="#" class="small-box-footer">
+                <a href="CreateExam.jsp" class="small-box-footer">
                   Proceed <i class="fa fa-arrow-circle-right"></i>
                 </a>
               </div>
