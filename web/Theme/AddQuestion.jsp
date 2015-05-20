@@ -50,7 +50,7 @@
         <!-- Code of middel part -->
       
 
-      <div class="box box-primary" style="width:70%">
+      <div class="box box-primary" style="width:70%;margin-left: 10px">
                 <div class="box-header">
                   <h3 class="box-title">Question Detail</h3>
                 </div><!-- /.box-header -->
@@ -59,7 +59,7 @@
                   <div class="box-body">
                     <div class="form-group">
                       <label>Course</label>
-                      <select class="form-control" id="course">
+                      <select class="form-control" id="course" name="course">
                         <option>option 1</option>
                         <option>option 2</option>
                         <option>option 3</option>
@@ -69,13 +69,13 @@
                     </div>
                     <div class="form-group">
                       <label>Level</label>
-                      <select class="form-control" id="level">
+                      <select class="form-control" id="level" name="level">
                         <option>Easy</option>
                         <option>Medium</option>
                         <option>Hard</option>
                       </select>
                     </div>
-                     <div class='box box-info'>
+                     <div class='box box-info' style="margin-left: 0px">
                 <div class='box-header'>
                   <h3 class='box-title'>Question Description</h3>
                   <!-- tools box -->
@@ -94,27 +94,27 @@
               </div>
                     <div class="form-group">
                       <label>Question</label>
-                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..."></textarea>
+                      <textarea class="form-control" id="ques" name="ques" rows="3" placeholder="Enter ..."></textarea>
                     </div>
                     <div class="form-group">
                       <label>Option A</label>
-                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..."></textarea>
+                      <textarea class="form-control" id="opA" name="opA" rows="3" placeholder="Enter ..."></textarea>
                     </div>
                     <div class="form-group">
                       <label>Option B</label>
-                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..."></textarea>
+                      <textarea class="form-control" id="opB" name="opB" rows="3" placeholder="Enter ..."></textarea>
                     </div>
                     <div class="form-group">
                       <label>Option C</label>
-                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..."></textarea>
+                      <textarea class="form-control" id="opC" name="opC" rows="3" placeholder="Enter ..."></textarea>
                     </div>
                     <div class="form-group">
                       <label>Option D</label>
-                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..."></textarea>
+                      <textarea class="form-control" id="opD" name="opD" rows="3" placeholder="Enter ..."></textarea>
                     </div>
                     <div class="form-group">
                       <label>Solution</label>
-                      <select class="form-control" id="solution">
+                      <select class="form-control" id="solution" name="solution">
                         <option>A</option>
                         <option>B</option>
                         <option>C</option>
