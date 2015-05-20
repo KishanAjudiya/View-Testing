@@ -12,6 +12,8 @@
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
      <%@include file="Head_css.jsp" %>
+     <script src="../plugins/jQuery/jQuery-2.1.4.min.js"></script>
+     <script src="validator.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -28,7 +30,7 @@
     
 
       <!-- Code of left side user panel -->
-     
+      <%@include file="Left-side_User_Menu.jsp" %>
       <!-- /Code of left side user panel -->
 
 
@@ -49,15 +51,15 @@
 
         <!-- Code of middel part -->
       
-
+        <form role="form" data-toggle="validator" action="controllor">
       <div class="box box-primary" style="margin-left:10px;width: 70%" >
                 <div class="box-header">
                   <h3 class="box-title">Question Detail</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <form role="form">
+                
                   <div class="box-body" >
-                    <div class="form-group">
+                    <div class="form-group" required>
                       <label>Course</label>
                       <select class="form-control" id="course">
                         <option>option 1</option>
@@ -69,24 +71,24 @@
                     </div>
                     <div class="form-group">
                       <label>Level</label>
-                      <select class="form-control" id="level">
+                      <select class="form-control" id="level" required>
                         <option>Easy</option>
                         <option>Medium</option>
                         <option>Hard</option>
                       </select>
                     </div>
-                     <div class='box box-info' style="margin-left: 0px">
+                  <div class='box box-info collapsed-box' style="margin-left: 0px">
                 <div class='box-header'>
                   <h3 class='box-title'>Question Description</h3>
                   <!-- tools box -->
                   <div class="pull-right box-tools">
-                    <button class="btn btn-info btn-sm" data-widget='collapse' data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+                    <button class="btn btn-info btn-sm" data-widget='collapse' data-toggle="tooltip" title="Collapse"><i class="fa fa-plus"></i></button>
                     
                   </div><!-- /. tools -->
                 </div><!-- /.box-header -->
                 <div class='box-body pad'>
                   
-                    <textarea id="editor1" name="editor1" rows="10" cols="80">
+                    <textarea class="form-control" id="editor1" name="editor1" rows="10" cols="80" required>
                                             
                     </textarea>
                   
@@ -94,19 +96,19 @@
               </div>
                     <div class="form-group">
                       <label>Question</label>
-                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..."></textarea>
+                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..." required></textarea>
                     </div>
                     <div class="form-group">
                       <label>Option A</label>
-                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..."></textarea>
+                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..." required></textarea>
                     </div>
                     <div class="form-group">
                       <label>Option B</label>
-                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..."></textarea>
+                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..." required></textarea>
                     </div>
                     <div class="form-group">
                       <label>Option C</label>
-                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..."></textarea>
+                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..." ></textarea>
                     </div>
                     <div class="form-group">
                       <label>Option D</label>
@@ -114,7 +116,7 @@
                     </div>
                     <div class="form-group">
                       <label>Solution</label>
-                      <select class="form-control" id="solution">
+                      <select class="form-control" id="solution" required>
                         <option>A</option>
                         <option>B</option>
                         <option>C</option>
@@ -134,7 +136,17 @@
               </div><!-- /.box -->
 
 
+<script type="text/javascript">
+      $(function () {
+        // Replace the <textarea id="editor1"> with a CKEditor
+        // instance, using default configuration.
+        CKEDITOR.replace('editor1');
+        //bootstrap WYSIHTML5 - text editor
+        $(".textarea").wysihtml5();
+      });
+    </script>
 
+ 
 
       <!-- /Code of middel part -->
 

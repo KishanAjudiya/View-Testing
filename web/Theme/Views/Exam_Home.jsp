@@ -102,11 +102,30 @@
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
-        ...
-      </div>
+          <div class="row" style="padding-left: 40px;padding-top: 10px;padding-right: 10px">
+          <label style="color:#fff; font-size:large;  width: 30%; background-color: rgb(108, 171, 227); height: 30px; text-align: right;" class="skin-blue"><b>Decs :</b> </label>
+          dfsadfasfd
+          </div>
+          <div class="row" style="padding-left: 40px;padding-top: 10px;padding-right: 10px">
+          <label style="color:#fff; font-size:large;  width: 30%; background-color: rgb(108, 171, 227); height: 30px; text-align: right;" class="skin-blue"><b>Decs :</b> </label>
+          dfsadfasfd
+          </div>
+          <div class="row" style="padding-left: 40px;padding-top: 10px;padding-right: 10px">
+          <label style="color:#fff; font-size:large;  width: 30%; background-color: rgb(108, 171, 227); height: 30px; text-align: right;" class="skin-blue"><b>Decs :</b> </label>
+          dfsadfasfd
+          </div>
+          <div class="row" style="padding-left: 40px;padding-top: 10px;padding-right: 10px">
+          <label style="color:#fff; font-size:large;  width: 30%; background-color: rgb(108, 171, 227); height: 30px; text-align: right;" class="skin-blue"><b>Decs :</b> </label>
+          dfsadfasfd
+          </div>
+          <div class="row" style="padding-left: 40px;padding-top: 10px;padding-right: 10px">
+          <label style="color:#fff; font-size:large;  width: 30%; background-color: rgb(108, 171, 227); height: 30px; text-align: right;" class="skin-blue"><b>Decs :</b> </label>
+          dfsadfasfd
+          </div>
+          </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        
       </div>
     </div>
   </div>

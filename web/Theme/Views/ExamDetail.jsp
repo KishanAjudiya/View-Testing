@@ -61,7 +61,7 @@
                   
 
                   <div class="box-footer">
-                      <a href="#tab_2" data-toggle="tab"><button type="button" class="btn btn-primary pull-right">Submit</button></a>
+                      <a href="#tab_2" data-toggle="tab"><button type="button" class="btn btn-primary pull-right">Next</button></a>
                   </div>
                
               </div>     

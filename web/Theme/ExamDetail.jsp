@@ -63,7 +63,7 @@
                   <div class="box-footer">
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </div>
-                </form>
+               
               </div>     
 <script type="text/javascript">
       $(function () {
