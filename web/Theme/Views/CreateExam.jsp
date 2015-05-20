@@ -55,7 +55,7 @@
         <!-- Code of middel part -->
                     
 
-        <form role="form">
+        <form role="form" action="/ThemeSetting/NewServlet" method="post">
 
         <div class="container" >
 

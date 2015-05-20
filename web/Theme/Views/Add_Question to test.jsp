@@ -22,6 +22,11 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <%
+                            int[] s=new int[5];
+                        for(int i=0;i<5;i++)
+                        {
+                           %>
                       <tr>
                           <td>no</td>
                         <td>Trident</td>
@@ -31,13 +36,17 @@
                         
                         <td><div class="form-group">
                             <label>
-                            <input type="checkbox" class="flat-red" value="Q_id"/>
+                                <input type="checkbox" class="flat-red" id="qid" name="qid" value="<%=i%>" />
+                            
                             </label>
+                                
                             &nbsp;&nbsp;&nbsp;Add
                             </div>
                         </td>
                       </tr>
-                      
+                      <%
+                        }
+                      %>
                     </tbody>
                     <tfoot>
                       <tr>
