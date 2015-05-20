@@ -1,7 +1,4 @@
- <div class='box box-primary' style='width:70%'>
-                <div class='box-header'>
-                  <h3 class='box-title'>Exam Detail</h3>
-                </div><!-- /.box-header -->
+ <div class='box box-primary' style='width:70%'>           <div class='box-header'>  <h3 class='box-title'>Exam Detail</h3>         </div><!-- /.box-header -->
                 <!-- form start -->
                 
                   <div class='box-body'>
