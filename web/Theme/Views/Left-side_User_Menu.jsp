@@ -45,6 +45,10 @@
                 <i class="fa fa-book"></i> <span>Exam</span> 
               </a>
             </li>
+            <li>
+                <a href="StudentViewResult.jsp">
+                  <i class="fa fa-circle-o"></i><span> Result</span>
+                </a></li>
             
           </ul>
         </section>
