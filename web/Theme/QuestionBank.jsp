@@ -49,11 +49,27 @@
                     <button type="submit" class="btn btn-primary">Add Questions</button>
                   </div>
 
-              
+              <br>
+      <br>
+        <div class="col-lg-30 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-aqua-active">
+                <div class="inner">
+                  <h2>Create</h2>
+                  <h2>Exam</h2>               
+                </div>
+                <div class="icon">
+                  <i class="glyphicon glyphicon-edit"></i>
+                </div>
+                <a href="#" class="small-box-footer">
+                  Proceed <i class="fa fa-arrow-circle-right"></i>
+                </a>
+              </div>
+            </div>
                <!-- Table -->
 
          
-            <div class="box">
+            <div class="box" style="margin-left: 0px">
                 <div class="box-header">
                   <h3 class="box-title">List of Questions</h3>
                 </div><!-- /.box-header -->
