@@ -69,6 +69,10 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <%
+                            for(int i=0;i<=5;i++) 
+                                { 
+                        %>
                       <tr>
                         <td>183</td>
                       <td>Java</td>
@@ -78,10 +82,10 @@
                   <a class="btn btn-app">
                     <i class="fa fa-edit" style="transform:translate(0px, -10px)" ></i> Edit
                   </a>
-                  <a class="btn btn-app">
+                 <a class="btn btn-app" data-toggle="modal" href="#myModal1<%= i %>">
                     <i class="fa fa-trash" style="transform:translate(0px, -10px)"></i> Delete
                   </a>
-                  <a class="btn btn-app">
+                  <a class="btn btn-app" data-toggle="modal" href="#myModal<%= i %>">
                     <i class="fa fa-eye" style="transform:translate(0px, -10px)"></i> View
                   </a>
                   <a class="btn btn-app">
@@ -89,7 +93,50 @@
                   </a>
                 </div><!-- /.box-body --></td>
                       </tr>
+                 
+<div class="modal fade" id="myModal<%= i %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+                    
+   <div class="modal fade" id="myModal1<%= i %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Delete</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+          <form action="delete request controllor" method="post" >
+              <input type="hidden" name="test_id" value=" value of exam id">
+        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        <button type="submit" class="btn btn-primary">Yes</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>                 
+
                       
+                      
+                      
+                      <% } %>
                     </tbody>
                     <tfoot>
                       <tr>
