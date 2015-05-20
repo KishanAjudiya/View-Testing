@@ -1,10 +1,4 @@
-<%! 
- int pageCount = 0;
- void addCount() {
-   pageCount++;
- }
-%>
-<% addCount(); %>
+
 
 <aside class="main-sidebar">
         <!-- sidebar: style can be found in sidebar.less -->
@@ -18,7 +12,7 @@
               <p>Kishan Ajudiya</p>
 
              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-             <p>This site has been visited <%= pageCount %> times.</p>
+             
             </div>
           </div>
           <!-- search form -->

@@ -75,10 +75,23 @@
                         <option>Hard</option>
                       </select>
                     </div>
-                    <div class="form-group">
-                      <label>Question Description</label>
-                      <textarea class="form-control" id="ques_desc" rows="3" placeholder="Enter ..."></textarea>
-                    </div>
+                     <div class='box box-info'>
+                <div class='box-header'>
+                  <h3 class='box-title'>Question Description</h3>
+                  <!-- tools box -->
+                  <div class="pull-right box-tools">
+                    <button class="btn btn-info btn-sm" data-widget='collapse' data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+                    
+                  </div><!-- /. tools -->
+                </div><!-- /.box-header -->
+                <div class='box-body pad'>
+                  
+                    <textarea id="editor1" name="editor1" rows="10" cols="80">
+                                            
+                    </textarea>
+                  
+                </div>
+              </div>
                     <div class="form-group">
                       <label>Question</label>
                       <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..."></textarea>

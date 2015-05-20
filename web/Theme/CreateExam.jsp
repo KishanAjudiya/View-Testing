@@ -12,7 +12,7 @@
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
     <%@include file="Head_css.jsp" %>
-    
+    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -71,19 +71,24 @@
     </div>
     <div class="row">
         <div class="row step" style="margin-left:150px">
+            <a href="#tab_1" data-toggle="tab">
             <div id="add_detail" class="col-md-2 activestep" onclick="javascript: resetActive(event, 33.33);">
                 <span class="fa fa-file-text"></span>
                 <p>Add Test Details</p>
             </div>
+            </a>
+            <a href="#tab_2" data-toggle="tab">
             <div id="add_question" class="col-md-2 " onclick="javascript: resetActive(event, 66.66);">
                 <span class="fa fa-plus"></span>
                 <p>Add Questions</p>
             </div>
+            </a>
+                <a href="#tab_3" data-toggle="tab">
             <div id="config_test" class="col-md-2" onclick="javascript: resetActive(event, 100);">
                 <span class="fa fa-gears"></span>
                 <p>Configure Test</p>
             </div>
-            
+                </a>
             
         </div>
     </div>
@@ -177,44 +182,39 @@
     }
 
 </script>
-
-
-<!-- Steps ProgressBar - END -->
-
 </div>
 
-              <div id="replaceOLD">
-              <div class="box box-info" style="margin-left:140px;width:70%">
+         <div class="box box-info" style="margin-left:140px;width:70%">
                 <div class="box-header with-border">
-                  
-
-
-                  
-                  <h1 class="box-title">Add Test Details</h1>
-                  <div class="box-tools pull-right">
-                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                    </div>
+                
                   <div class="box-body">
+
+                      <div class="col-md-6" style="width: 100%">
+                <div class="nav-tabs-custom">
+                
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab_1">
+                    
+                      <%@include file="ExamDetail.jsp" %>
+                  </div><!-- /.tab-pane -->
+                  <div class="tab-pane" id="tab_2">
+                      <%@include file="Add_Question to test.jsp" %>
+                  </div><!-- /.tab-pane -->
+                  <div class="tab-pane" id="tab_3">
+                      <%@include file="ExamConfig.jsp" %>
+                  </div><!-- /.tab-pane -->
+                </div><!-- /.tab-content -->
+              </div><!-- nav-tabs-custom -->
+            </div><!-- /.col -->
+
+
+
                 </div>
 
                 </div><!-- /.box-header -->
-                
-
-
                 </div>
-                </div>
+             
 
-
-<script>
-$(document).ready(function(){
-    $("#add_detail").click(function(){
-        $("#replaceOLD").replaceWith("<div id='replaceOLD'> Kishan</div>");
-    });
-    $("#add_question").click(function(){
-        $("#replaceOLD").replaceWith("<div id='replaceOLD'> Question</div>");
-    });
-});
-</script>
 
 
 
@@ -233,21 +233,9 @@ $(document).ready(function(){
       
       <!-- @#@#@ Control Sidebar -->      
       <aside class="control-sidebar control-sidebar-dark">                
-        <!-- Create the tabs -->
-
-        <!-- Right Side Setting Menu -->
-
-
-
-
-
-
-        
-        <!-- /Right Side Setting Menu -->
-        
+ 
       </aside><!-- /.control-sidebar -->
-      <!-- Add the sidebar's background. This div must be placed
-           immediately after the control sidebar -->
+     
       <div class='control-sidebar-bg'></div>
     </div><!-- ./wrapper -->
 <%@include file="Main_include_js.jsp" %>
