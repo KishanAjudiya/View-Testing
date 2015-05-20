@@ -52,7 +52,7 @@
             </div>
             <!-- Table -->
             <div class="col-xs-12">
-              <div class="box">
+              <div class="box" style="margin-left: 0px">
                 <div class="box-header">
                   <h3 class="box-title">Exam List</h3>
                   
