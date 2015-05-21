@@ -13,6 +13,7 @@
   
   </head>
   <body class="skin-blue sidebar-mini">
+       
     <div class="wrapper">
       
    <%@include file="Header.jsp" %>
@@ -37,7 +38,7 @@
           </ol>
         </section>
         <!-- Code of middel part -->
-       
+       <form action="#" method="get">
         <div class="row">
             <div class="col-lg-8" style="margin-left: 70px; margin-top: 50px">
                 <div class="box box-info">
@@ -57,12 +58,12 @@
                     <div class="box-body">
                         
                     </div>
+                    <div class="box-footer">
+                        <button type="submit" class="btn btn-primary" id="btnPre"><i class="fa fa-arrow-circle-left"></i>Previous</button>
+                        <button type="submit" class="btn btn-primary pull-right" id="btnNxt">Next<i class="fa fa-arrow-circle-right"></i></button>
+                
+                    </div>
                 </div>
-                
-                
-                
-                
-                
                 
             </div>
             <div class="col-lg-3" style=" margin-top: 50px">
@@ -78,7 +79,7 @@
                 </div><!-- /.box-body -->
                
               </div>
-                
+              
                 
                 <div class="box box-success">
                 <div class="box-header">
@@ -87,25 +88,28 @@
                 <div class="box-body">
                   
                   <!-- radio -->
-                  <div class="form-group">
-                    <label>
-                      <input type="radio" name="r1" class="flat-red"/>
+                  <div class="form-group" id="r1">
+                    <div class="btn-group btn-group-sm" data-toggle="buttons">
+                        
+                     <label id="a" class="btn btn-primary" for="test2_t" >
+                         <input type="radio" name="test2" id="r1" value="a"/> A
+                     </label>
+                        <br>
+                        <br>
+                        <label id="b" class="btn btn-primary" for="test2_t" >   
+                      <input type="radio" name="test2" id="r2" value="b"/> B
+                     </label>
+                        <br>
+                        <br>
+                        <label id="c" class="btn btn-primary" for="test2_t" >
+                      <input type="radio" name="test2" id="r3" value="c"/> C
+                     </label>
+                        <br>
+                        <br>
+                      <label id="d" class="btn btn-primary" for="test2_f" >
+                     <input  type="radio" name="test2" id="r4" value="d"/> D
                     </label>
-                      <br>
-                      <br>
-                    <label>
-                      <input type="radio" name="r1" class="flat-red"/>
-                    </label>
-                      <br>
-                      <br>
-                    <label>
-                      <input type="radio" name="r1" class="flat-red"/>
-                      </label>
-                      <br>
-                      <br>
-                      <label>
-                      <input type="radio" name="r1" class="flat-red"/>
-                      </label>
+</div>
                   </div>
                 </div><!-- /.box-body -->
               
@@ -113,25 +117,30 @@
             </div>
             
         </div>
+           
+         </form>
         <div class="row">
             <div class="col-lg-9" style="margin-left: 70px">
                 <div class="box box-primary">
                 <div class="box-header">
                   <h3 class="box-title">Question</h3>
+                  <button class="btn btn-warning btn-sm" id="flag">Flag</button>
+                  <button class="btn btn-danger btn-sm" id="uncheck">Uncheck</button>
                 </div>
                 <div class="box-body">
         
                     
-                   
+                   <span id="qu" data-toggle="tooltip" title="Attemted" class='badge bg-red'>3</span>
                    
                 </div>
                         
                
               </div>
             </div>
+            
         </div> 
         
-        
+       
         
         
         
@@ -158,14 +167,79 @@
     </div><!-- ./wrapper -->
     <%@include file="Main_include_js.jsp" %>
             <script src="../plugins/iCheck/icheck.min.js" type="text/javascript"></script>
-    
-    <script type="text/javascript">
-    
-        //Flat red color scheme for iCheck
-        $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
-          checkboxClass: 'icheckbox_flat-green',
-          radioClass: 'iradio_flat-green'
-        });
+    <script>
+        
+        
+            $('input[type=radio]').change( function() {
+                if($(this).val()=="a")
+                {
+                    $("#"+$(this).val()).removeClass("btn-primary");
+                    $("#"+$(this).val()).toggleClass("btn-success");
+                    $("#b").addClass("btn-primary");$("#b").removeClass("btn-success");
+                    $("#c").addClass("btn-primary");$("#c").removeClass("btn-success");
+                    $("#d").addClass("btn-primary");$("#d").removeClass("btn-success");
+                  }
+                  if($(this).val()=="b")
+                {
+                    $("#"+$(this).val()).removeClass("btn-primary");
+                    $("#"+$(this).val()).toggleClass("btn-success");
+                    $("#a").addClass("btn-primary");$("#a").removeClass("btn-success");
+                    $("#c").addClass("btn-primary");$("#c").removeClass("btn-success");
+                    $("#d").addClass("btn-primary");$("#d").removeClass("btn-success");
+                  }
+                  if($(this).val()=="c")
+                {
+                    $("#"+$(this).val()).removeClass("btn-primary");
+                    $("#"+$(this).val()).toggleClass("btn-success");
+                    $("#b").addClass("btn-primary");$("#b").removeClass("btn-success");
+                    $("#a").addClass("btn-primary");$("#a").removeClass("btn-success");
+                    $("#d").addClass("btn-primary");$("#d").removeClass("btn-success");
+                  }
+                  if($(this).val()=="d")
+                {
+                    $("#"+$(this).val()).removeClass("btn-primary");
+                    $("#"+$(this).val()).toggleClass("btn-success");
+                    $("#b").addClass("btn-primary");$("#b").removeClass("btn-success");
+                    $("#c").addClass("btn-primary");$("#c").removeClass("btn-success");
+                    $("#a").addClass("btn-primary");$("#a").removeClass("btn-success");
+                  }
+                
+            
+                });
+        
+        
+       $('input[type=radio]').change( function() {
+        if ( $('#qu').hasClass('bg-red') || $('#qu').hasClass('bg-orange') )
+        {
+        $("#qu").removeClass("bg-red");$("#qu").removeClass("bg-orange");
+        $("#qu").toggleClass("bg-green");
+        }
+      });
+    $("#flag").click(function() {
+        if ( $('#qu').hasClass('bg-red') || $('#qu').hasClass('bg-green') )
+        {
+        $("#qu").removeClass("bg-red");$("#qu").removeClass("bg-green");
+        $("#qu").toggleClass("bg-orange");
+        }
+    });
+    $("#uncheck").click(function() {
+        if ( $('#qu').hasClass('bg-orange') || $('#qu').hasClass('bg-green') )
+        {
+        $("#qu").removeClass("bg-orange");$("#qu").removeClass("bg-green");
+        $("#qu").toggleClass("bg-red");
+       
+       $("input:radio").attr("checked", false);
+                    $("#b").addClass("btn-primary");$("#b").removeClass("btn-success");
+                    $("#a").addClass("btn-primary");$("#a").removeClass("btn-success");
+                    $("#d").addClass("btn-primary");$("#d").removeClass("btn-success");
+                    $("#c").addClass("btn-primary");$("#c").removeClass("btn-success");
+        }
+        
+        
+    });
         </script>
+            
+    
+        
   </body>
 </html>
