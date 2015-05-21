@@ -62,7 +62,7 @@
                   <div class="box-body" >
                     <div class="form-group" required>
                       <label>Course</label>
-                      <select class="form-control" name="course" id="course">
+                      <select class="form-control" name="course" id="course" required>
                         <option>option 1</option>
                         <option>option 2</option>
                         <option>option 3</option>
@@ -129,6 +129,7 @@
                  
                   <div class="box-footer">
                     <button type="submit" class="btn btn-primary pull-right">Add Qustion</button>
+                    <button type="submit" class="btn btn-primary pull-right">Update Qustion</button>
                   </div>
                   </div>
       

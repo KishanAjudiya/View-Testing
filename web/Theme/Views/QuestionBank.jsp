@@ -47,7 +47,8 @@
 
         <!-- Code of middel part -->
         <div class="row" style="margin-left: 40px;margin-top: 20px">
-        <div class="col-lg-5 col-xs-6" >
+            
+        <div class="col-lg-30 col-xs-6" >
               <!-- small box -->
               <div class="small-box bg-aqua-active">
                 <div class="inner">
@@ -65,7 +66,7 @@
               
                <!-- Table -->
 
-         
+         <div class="col-xs-12">
             <div class="box box-primary">
                 <div class="box-header">
                   <h3 class="box-title">List of Questions</h3>
@@ -94,15 +95,73 @@
                    <a class="btn btn-app" href="Controllor?action=update_question">
                     <i class="fa fa-edit" style="transform:translate(0px, -10px)" ></i> Edit
                   </a>
-                  <a class="btn btn-app">
+                  <a class="btn btn-app" data-toggle="modal" href="#myModal1">
                     <i class="fa fa-trash" style="transform:translate(0px, -10px)"></i> Delete
                   </a>
-                  <a class="btn btn-app">
+                  <a class="btn btn-app" data-toggle="modal" href="#myModal">
                     <i class="fa fa-eye" style="transform:translate(0px, -10px)"></i> View
                   </a>
                 </div><!-- /.box-body --></td>
                        
                       </tr>
+                      
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+          <div class="row" style="padding-left: 40px;padding-top: 10px;padding-right: 10px">
+          <label style="color:#fff; font-size:large;  width: 30%; background-color: rgb(108, 171, 227); height: 30px; text-align: right;" class="skin-blue"><b>Decs :</b> </label>
+          dfsadfasfd
+          </div>
+          <div class="row" style="padding-left: 40px;padding-top: 10px;padding-right: 10px">
+          <label style="color:#fff; font-size:large;  width: 30%; background-color: rgb(108, 171, 227); height: 30px; text-align: right;" class="skin-blue"><b>Decs :</b> </label>
+          dfsadfasfd
+          </div>
+          <div class="row" style="padding-left: 40px;padding-top: 10px;padding-right: 10px">
+          <label style="color:#fff; font-size:large;  width: 30%; background-color: rgb(108, 171, 227); height: 30px; text-align: right;" class="skin-blue"><b>Decs :</b> </label>
+          dfsadfasfd
+          </div>
+          <div class="row" style="padding-left: 40px;padding-top: 10px;padding-right: 10px">
+          <label style="color:#fff; font-size:large;  width: 30%; background-color: rgb(108, 171, 227); height: 30px; text-align: right;" class="skin-blue"><b>Decs :</b> </label>
+          dfsadfasfd
+          </div>
+          <div class="row" style="padding-left: 40px;padding-top: 10px;padding-right: 10px">
+          <label style="color:#fff; font-size:large;  width: 30%; background-color: rgb(108, 171, 227); height: 30px; text-align: right;" class="skin-blue"><b>Decs :</b> </label>
+          dfsadfasfd
+          </div>
+          </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+                    
+   <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Delete</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+          <form action="Controllor?action=detete_question" method="post" >
+              <input type="hidden" name="test_id" value=" value of question id">
+        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        <button type="submit" class="btn btn-primary">Yes</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>                 
                       
                     </tbody>
                     <tfoot>
@@ -117,10 +176,9 @@
                   </table>
                 </div><!-- /.box-body -->
               </div><!-- /.box -->
-          
+         </div>
 
         </div>
-
 
 
       <!-- /Code of middel part -->
