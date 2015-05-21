@@ -24,11 +24,11 @@
               
                 <li>
                   <a href="Controllor?action=dashbord">
-                    <i class="fa fa-circle-o"></i><span> Dashboard</span></a>
+                    <i class="glyphicon glyphicon-dashboard"></i><span> Dashboard</span></a>
                   </li>
               <li>
                 <a href="Controllor?action=profile">
-                  <i class="fa fa-circle-o"></i><span> Profile</span>
+                  <i class="glyphicon glyphicon-user"></i><span> Profile</span>
                 </a></li>
             
             <li>
@@ -38,27 +38,27 @@
             </li>
             <li>
                 <a href="Controllor?action=result">
-                  <i class="fa fa-circle-o"></i><span> Result</span>
+                  <i class="fa fa-check"></i><span> Result</span>
                 </a>
             </li>
             <li>
                 <a href="Controllor?action=question_bank">
-                  <i class="fa fa-circle-o"></i><span> Question Bank</span>
+                  <i class="fa fa-university"></i><span> Question Bank</span>
                 </a>
             </li>
             <li>
                 <a href="Controllor?action=import">
-                  <i class="fa fa-circle-o"></i><span> Import</span>
+                  <i class="fa fa-reply"></i><span> Import</span>
                 </a>
             </li>
             <li>
                 <a href="Controllor?action=export">
-                  <i class="fa fa-circle-o"></i><span> Export</span>
+                  <i class="fa fa-share"></i><span> Export</span>
                 </a>
             </li>
             <li>
                 <a href="Controllor?action=logout">
-                  <i class="fa fa-circle-o"></i><span>Logout</span>
+                  <i class="glyphicon glyphicon-log-out"></i><span>Logout</span>
                 </a>
             </li>
             
