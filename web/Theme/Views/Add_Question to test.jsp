@@ -36,6 +36,7 @@
                         
                         <td><div class="form-group">
                             <label>
+                                
                                 <input type="checkbox" class="flat-red" id="qid" name="qid" value="<%=i%>" />
                             
                             </label>

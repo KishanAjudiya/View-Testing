@@ -43,16 +43,17 @@
             <small>Control panel</small>
           </h1>
           <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
+            <li><a href="controllor?action=dashbord"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="controllor?action=question_bank">Question Bank</a></li>
+            <li class="active">Add Question</li>
           </ol>
         </section>
 
 
         <!-- Code of middel part -->
       
-        <form role="form" data-toggle="validator" action="controllor">
-      <div class="box box-primary" style="margin-left:10px;width: 70%" >
+        <form role="form" data-toggle="validator" action="controllor?action=add_question">
+      <div class="box box-primary" style="margin-left:40px;width: 70%; margin-top: 20px" >
                 <div class="box-header">
                   <h3 class="box-title">Question Detail</h3>
                 </div><!-- /.box-header -->
@@ -61,7 +62,7 @@
                   <div class="box-body" >
                     <div class="form-group" required>
                       <label>Course</label>
-                      <select class="form-control" id="course">
+                      <select class="form-control" name="course" id="course">
                         <option>option 1</option>
                         <option>option 2</option>
                         <option>option 3</option>
@@ -71,7 +72,7 @@
                     </div>
                     <div class="form-group">
                       <label>Level</label>
-                      <select class="form-control" id="level" required>
+                      <select class="form-control" id="level" name="level" required>
                         <option>Easy</option>
                         <option>Medium</option>
                         <option>Hard</option>
@@ -88,7 +89,7 @@
                 </div><!-- /.box-header -->
                 <div class='box-body pad'>
                   
-                    <textarea class="form-control" id="editor1" name="editor1" rows="10" cols="80" required>
+                    <textarea class="form-control" id="text_decs" name="text_desc" rows="10" cols="80" >
                                             
                     </textarea>
                   
@@ -96,27 +97,27 @@
               </div>
                     <div class="form-group">
                       <label>Question</label>
-                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..." required></textarea>
+                      <textarea class="form-control" id="ques" rows="3" placeholder="Question" required></textarea>
                     </div>
                     <div class="form-group">
                       <label>Option A</label>
-                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..." required></textarea>
+                      <textarea class="form-control" id="optionA" rows="3" placeholder="Option A" required></textarea>
                     </div>
                     <div class="form-group">
                       <label>Option B</label>
-                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..." required></textarea>
+                      <textarea class="form-control" id="optionB" rows="3" placeholder="OptionB" required></textarea>
                     </div>
                     <div class="form-group">
                       <label>Option C</label>
-                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..." ></textarea>
+                      <textarea class="form-control" id="optionC" rows="3" placeholder="OptionC" ></textarea>
                     </div>
                     <div class="form-group">
                       <label>Option D</label>
-                      <textarea class="form-control" id="ques" rows="3" placeholder="Enter ..."></textarea>
+                      <textarea class="form-control" id="optionD" rows="3" placeholder="OptionD"></textarea>
                     </div>
                     <div class="form-group">
                       <label>Solution</label>
-                      <select class="form-control" id="solution" required>
+                      <select class="form-control" id="solution" name="solution" required>
                         <option>A</option>
                         <option>B</option>
                         <option>C</option>
@@ -126,21 +127,21 @@
                    
                   </div><!-- /.form group -->
                  
-                  
-                  </div><!-- /.box-body -->
-      
                   <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Add</button>
+                    <button type="submit" class="btn btn-primary pull-right">Add Qustion</button>
                   </div>
+                  </div>
+      
+                  
                 </form>
-              </div><!-- /.box -->
+             
 
 
 <script type="text/javascript">
       $(function () {
         // Replace the <textarea id="editor1"> with a CKEditor
         // instance, using default configuration.
-        CKEDITOR.replace('editor1');
+        CKEDITOR.replace('text_desc');
         //bootstrap WYSIHTML5 - text editor
         $(".textarea").wysihtml5();
       });

@@ -15,24 +15,25 @@
                   <div class="box-body">
                     <div class="form-group">
                       <label>Set Exam Name</label>
-                      <input type="text" class="form-control" id="exam_name" name="exam_name" placeholder="Enter ..."/>
+                      <input type="text" class="form-control" id="exam_name" name="exam_name" placeholder="Exam name" required/>
                     </div>
                     <div class="form-group">
                       <label>Set Exam Password</label>
-                      <input type="text" class="form-control" id="exam_password" name="exam_password" placeholder="Enter ..."/>
+                      <input type="password" class="form-control" id="exam_password" name="exam_password" placeholder="Password" required/>
                     </div>
                     <div class="form-group">
                       <label>Show Result</label>
                       <br>
-                      <input type="radio" name="show_result" value="Yes">Yes
+                      <input type="radio" name="show_result" value="Y" checked>Yes
                       &nbsp;&nbsp;&nbsp;
-                      <input type="radio" name="show_result" value="No">No
+                      <input type="radio" name="show_result" value="N">No
                     </div>
 
                   
                   </div><!-- /.box-body -->
                    <div class="box-footer">
                     <button type="submit" class="btn btn-success btn-lg pull-right">Create Exam</button>
+                    <button type="submit" class="btn btn-success btn-lg pull-right">Update Exam</button>
                   </div>
                 
               </div><!-- /.box -->

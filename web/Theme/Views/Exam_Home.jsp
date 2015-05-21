@@ -24,12 +24,12 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Dashboard
+            Exam
             <small>Control panel</small>
           </h1>
           <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
+            <li class="active">Exam</li>
           </ol>
         </section>
         <!-- Code of middel part -->
@@ -45,7 +45,7 @@
                 <div class="icon">
                   <i class="glyphicon glyphicon-edit"></i>
                 </div>
-                <a href="CreateExam.jsp" class="small-box-footer">
+                <a href="Controllor?action=create_exam" class="small-box-footer">
                   Proceed <i class="fa fa-arrow-circle-right"></i>
                 </a>
               </div>
@@ -58,7 +58,7 @@
                   
                 </div><!-- /.box-header -->
                 <div class="box-body table-responsive no-padding">
-                <table id="example1" class="table table-bordered table-striped">
+                <table id="exam_list" class="table table-bordered table-striped">
                     <thead>
                       <tr>
                         <th>ID</th>
@@ -79,7 +79,7 @@
                       <td>60</td>
                       <td>11/6/2015</td>
                       <td><div class="box-body">
-                  <a class="btn btn-app">
+                   <a class="btn btn-app" href="Controllor?action=update_exam">
                     <i class="fa fa-edit" style="transform:translate(0px, -10px)" ></i> Edit
                   </a>
                  <a class="btn btn-app" data-toggle="modal" href="#myModal1<%= i %>">
@@ -88,7 +88,7 @@
                   <a class="btn btn-app" data-toggle="modal" href="#myModal<%= i %>">
                     <i class="fa fa-eye" style="transform:translate(0px, -10px)"></i> View
                   </a>
-                  <a class="btn btn-app">
+                  <a class="btn btn-app" href="Controllor?action=exam_priview">
                     <i class="fa fa-play" style="transform:translate(0px, -10px)"></i> Preview
                   </a>
                 </div><!-- /.box-body --></td>
@@ -142,7 +142,7 @@
         ...
       </div>
       <div class="modal-footer">
-          <form action="delete request controllor" method="post" >
+          <form action="Controllor?action=detete_exam" method="post" >
               <input type="hidden" name="test_id" value=" value of exam id">
         <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
         <button type="submit" class="btn btn-primary">Yes</button>

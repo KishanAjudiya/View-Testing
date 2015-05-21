@@ -13,12 +13,8 @@
     <!-- Bootstrap 3.3.4 -->
     <%@include file="Head_css.jsp" %>
     <script src="../plugins/jQuery/jQuery-2.1.4.min.js"></script>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+   
+     <script src="validator.js"></script>
     
   </head>
   <body class="skin-blue sidebar-mini">
@@ -31,7 +27,7 @@
       <!-- Code of left side user panel -->
       
 
-   
+      <%@include file="Left-side_User_Menu.jsp" %>
 
 
       <!-- /Code of left side user panel -->
@@ -42,12 +38,12 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Exam
+            Profile
             <small>Control panel</small>
           </h1>
           <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
+            <li class="active">Profile</li>
           </ol>
         </section>
 
@@ -55,20 +51,18 @@
         <!-- Code of middel part -->
         
         
-        <form role="form" action="/ThemeSetting/NewServlet" method="post">
+        
 
-        <div class="row">
+            <div class="row" style="margin-top: 30px">
             
-        <div class="col-md-6">
+                <div class="col-md-6" style="margin-left: 30px">
             
         <div class="box box-primary" style="margin-left: 10px;width: 90%">
             <div class="box-header">
                 <h2 class="page-header">Profile</h2>
                </div> 
             <div class="box-body">
-                <section class="sidebar">
-          <!-- Sidebar user panel -->
-          
+               
           <div class="row" style="margin-bottom: 30px">
               <img src="../user_photo.jpeg" class="img-circle" style="margin-left: 120px; height: 200px;width: 200px;"  alt="User Image" />
             </div>
@@ -130,7 +124,7 @@
         </div>
             
             <!-- Update Column -->
-        <div class="col-md-6">
+        <div class="col-md-5">
             
         <div class="box box-primary">
             <div class="box-header">
@@ -151,17 +145,18 @@
                       
                       
                     <div class="box box-primary" style="width:100%;margin-left: 7px">
-                <div class="box-header">
-                  
-                </div><!-- /.box-header -->
-                <!-- form start -->
-               
+                
                   <div class="box-body">
+                      <form role="form" data-toggle="validator" action="Controllor?action=update_Profile" method="post">
+                    <div class="form-group">
+                      <label> Profile Picture</label>
+                      <input type="file" class="form-control" id="profile_pic" name="profile_pic"/>
+                    </div>
                     <div class="form-group">
                       <label> Name</label>
-                      <input type="text" class="form-control" id="name" name="name" placeholder="Enter ..."/>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Name" required/>
                     </div>
-                      <div class="form-group">
+                      <div class="form-group" required>
                       <label>Gender</label>
                       <br>
                       <input type="radio" name="sex" value="M">Male
@@ -170,13 +165,16 @@
                     </div>
                     <div class="form-group">
                       <label>Education</label>
-                      <input type="text" class="form-control" id="education" name="education" placeholder="Enter ..."/>
+                      <input type="text" class="form-control" id="education" name="education" placeholder="Education Degree" required/>
                     </div>
                        <div class="form-group">
                       <label>Institute</label>
-                      <input type="text" class="form-control" id="institute" name="institute" placeholder="Enter ..."/>
+                      <input type="text" class="form-control" id="institute" name="institute" placeholder="Institute" required/>
                     </div>
-                    
+                   <div >
+                    <button type="submit" class="btn btn-primary btn-primary pull-right">Update</button>
+                  </div>
+                      </form>
 
                   
                   </div><!-- /.box-body -->
@@ -186,20 +184,37 @@
                   </div><!-- /.tab-pane -->
                   <div class="tab-pane" id="tab_2">
                    <div class="box box-primary" style="width:100%;margin-left: 7px">
-                <div class="box-header">
+                <div class="box-body">
+                      <form role="form" data-toggle="validator" action="Controllor?action=update_Profile" method="post">
                       <div class="form-group">
                       <label>Username</label>
-                      <input type="text" class="form-control" id="username" name="username" placeholder="Enter ..."/>
-                    </div>
-                       <div class="form-group">
-                      <label>Institute</label>
-                      <input type="text" class="form-control" id="password" name="password" placeholder="Enter ..."/>
+                      <input type="text" class="form-control" id="username" name="username" placeholder="Username" required/>
                     </div>
                     <div class="form-group">
-                      <label>Email</label>
-                      <input type="text" class="form-control" id="email" name="email" placeholder="Enter ..."/>
+                      <label>Old Password</label>
+                      <input type="password" class="form-control" id="old_pwd" name="old_password" placeholder="Old Password" required/>
                     </div>
-
+                    
+                    
+                    <div class="form-group">
+                      <label>New Password</label>
+                      <input type="password" class="form-control" id="new_pwd" name="new_password" placeholder="New Password" required/>
+                    </div>
+                    <span class="help-block">Minimum of 6 characters</span>
+                    <div class="form-group">
+                      
+                      <input type="password" class="form-control" id="new_pwd_con" data-match="#new_pwd" data-match-error="Whoops, these don't match" name="password" placeholder="Confirn" required/>
+                    </div>
+                    <div class="help-block with-errors"></div>
+                    <div class="form-group">
+                      <label>Email</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Enter ..." data-error="email address is invalid" required/>
+                    </div>
+                    <div class="help-block with-errors"></div>
+                    <div >
+                    <button type="submit" class="btn btn-primary btn-primary pull-right">Update</button>
+                  </div>
+                      </form>
                   
                   </div><!-- /.box-body -->
                   
@@ -212,9 +227,7 @@
 
                </div> 
             
-                 <div >
-                    <button type="submit" class="btn btn-primary btn-primary pull-right">Update</button>
-                  </div>
+                 
             </div>            
             </div>
             
@@ -223,7 +236,7 @@
             <!-- /Update Column -->
             
         </div>
-            </form>
+           
       <!-- /Code of middel part -->
 
 
