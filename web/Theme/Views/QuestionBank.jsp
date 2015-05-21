@@ -26,7 +26,7 @@
       <!-- Left side column. contains the logo and sidebar -->
     
       <!-- Code of left side user panel -->
-      
+      <%@include file="Left-side_User_Menu.jsp" %>
       <!-- /Code of left side user panel -->
 
 
@@ -40,21 +40,33 @@
           </h1>
           <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
+            <li class="active">Question Bank</li>
           </ol>
         </section>
 
 
         <!-- Code of middel part -->
-       <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Add Questions</button>
-                  </div>
-
+        <div class="row" style="margin-left: 40px;margin-top: 20px">
+        <div class="col-lg-5 col-xs-6" >
+              <!-- small box -->
+              <div class="small-box bg-aqua-active">
+                <div class="inner">
+                  <h2>Create</h2>
+                  <h2>Question</h2>               
+                </div>
+                <div class="icon">
+                  <i class="glyphicon glyphicon-edit"></i>
+                </div>
+                <a href="Controllor?action=create_question" class="small-box-footer">
+                  Proceed <i class="fa fa-arrow-circle-right"></i>
+                </a>
+              </div>
+            </div>
               
                <!-- Table -->
 
          
-            <div class="box">
+            <div class="box box-primary">
                 <div class="box-header">
                   <h3 class="box-title">List of Questions</h3>
                 </div><!-- /.box-header -->
@@ -79,7 +91,7 @@
                         
                         <td>
                             <div class="box-body">
-                  <a class="btn btn-app">
+                   <a class="btn btn-app" href="Controllor?action=update_question">
                     <i class="fa fa-edit" style="transform:translate(0px, -10px)" ></i> Edit
                   </a>
                   <a class="btn btn-app">
@@ -107,7 +119,7 @@
               </div><!-- /.box -->
           
 
-
+        </div>
 
 
 

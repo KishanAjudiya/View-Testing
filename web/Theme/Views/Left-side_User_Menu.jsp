@@ -10,45 +10,57 @@
             </div>
             <div class="pull-left info">
               <p>Kishan Ajudiya</p>
-
-             <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-             
-            </div>
+              <p>ajudiya.kishan007@gmail.com</p>
+               </div>
           </div>
           <!-- search form -->
-          <form action="#" method="get" class="sidebar-form">
-            <div class="input-group">
-              <input type="text" name="q" class="form-control" placeholder="Search..."/>
-              <span class="input-group-btn">
-                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-              </span>
-            </div>
-          </form>
+          
           <!-- /.search form -->
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
-            <li class="header">MAIN NAVIGATION</li>
+            <li class="header">NAVIGATIONS</li>
             
              
               
                 <li>
-                  <a href="index2.html">
+                  <a href="Controllor?action=dashbord">
                     <i class="fa fa-circle-o"></i><span> Dashboard</span></a>
                   </li>
               <li>
-                <a href="index2.html">
+                <a href="Controllor?action=profile">
                   <i class="fa fa-circle-o"></i><span> Profile</span>
                 </a></li>
             
             <li>
-              <a href="Exam_Home.jsp">
+              <a href="Controllor?action=exam_home">
                 <i class="fa fa-book"></i> <span>Exam</span> 
               </a>
             </li>
             <li>
-                <a href="StudentViewResult.jsp">
+                <a href="Controllor?action=result">
                   <i class="fa fa-circle-o"></i><span> Result</span>
-                </a></li>
+                </a>
+            </li>
+            <li>
+                <a href="Controllor?action=question_bank">
+                  <i class="fa fa-circle-o"></i><span> Question Bank</span>
+                </a>
+            </li>
+            <li>
+                <a href="Controllor?action=import">
+                  <i class="fa fa-circle-o"></i><span> Import</span>
+                </a>
+            </li>
+            <li>
+                <a href="Controllor?action=export">
+                  <i class="fa fa-circle-o"></i><span> Export</span>
+                </a>
+            </li>
+            <li>
+                <a href="Controllor?action=logout">
+                  <i class="fa fa-circle-o"></i><span>Logout</span>
+                </a>
+            </li>
             
           </ul>
         </section>
