@@ -89,7 +89,7 @@
                 </div><!-- /.box-header -->
                 <div class='box-body pad'>
                   
-                    <textarea class="form-control" id="text_decs" name="text_desc" rows="10" cols="80" >
+                    <textarea class="form-control" id="ques_desc" name="text_desc" rows="10" cols="80" >
                                             
                     </textarea>
                   
@@ -142,7 +142,7 @@
       $(function () {
         // Replace the <textarea id="editor1"> with a CKEditor
         // instance, using default configuration.
-        CKEDITOR.replace('text_desc');
+        CKEDITOR.replace('ques_desc');
         //bootstrap WYSIHTML5 - text editor
         $(".textarea").wysihtml5();
       });
