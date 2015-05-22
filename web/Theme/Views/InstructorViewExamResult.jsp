@@ -29,7 +29,7 @@
       <!-- Code of left side user panel -->
       
 
-   
+      <%@include file="Left-side_User_Menu.jsp" %>
 
 
       <!-- /Code of left side user panel -->
@@ -45,7 +45,8 @@
           </h1>
           <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
+            <li><a href="Controllor?action=result">Result</a></li>
+            <li class="active">Exam Result</li>
           </ol>
         </section>
 

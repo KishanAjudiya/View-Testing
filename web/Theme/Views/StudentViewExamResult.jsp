@@ -30,7 +30,7 @@
       <!-- Code of left side user panel -->
       
 
-   
+      <%@include file="Left-side_User_Menu.jsp" %>
 
 
       <!-- /Code of left side user panel -->
@@ -46,7 +46,8 @@
           </h1>
           <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
+            <li><a href="Controllor?action=result">Result</a></li>
+            <li class="active">Exam Result</li>
           </ol>
         </section>
 
@@ -55,8 +56,8 @@
       
             
          
-            <div class="col-xs-12">
-              <div class="box" style="margin-left: -10px">
+        <div class="row" style="margin-left:40px;margin-top: 20px ">
+              <div class="box">
                 
                 <div class="box-body table-responsive no-padding">
                   <table id="example1" class="table table-bordered table-striped">
@@ -66,7 +67,7 @@
                       <th>Question</th>
                       <th>Solution</th>
                       <th>Evaluation</th>
-                        </tr>
+                       </tr>
                     </thead>
                     <tbody>
                       <tr>
@@ -74,11 +75,7 @@
                       <td>ques1</td>
                       <td>Sol1</td>
                       <td>Wrong</td>
-                      <td><div class="box-body">
-                  <a class="btn btn-app">
-                    <i class="fa fa-eye" style="transform:translate(0px, -10px)"></i> View
-                  </a>
-                </div><!-- /.box-body --></td></td>                    
+                                         
                       </tr>
                       
                     </tbody>

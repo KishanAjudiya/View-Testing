@@ -58,7 +58,7 @@
             </li>
             <li>
                 <a href="Controllor?action=logout">
-                  <i class="glyphicon glyphicon-log-out"></i><span>Logout</span>
+                  <i class="fa fa-power-off"></i><span>Logout</span>
                 </a>
             </li>
             

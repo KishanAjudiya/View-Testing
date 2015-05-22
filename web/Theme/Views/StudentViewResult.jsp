@@ -30,7 +30,7 @@
       
 
    
-
+      <%@include file="Left-side_User_Menu.jsp" %>
 
       <!-- /Code of left side user panel -->
 
@@ -75,7 +75,7 @@
                       <td>11/2/2015</td>
                       <td>70</td>
                       <td><div class="box-body">
-                  <a class="btn btn-app">
+                              <a class="btn btn-app" href="Controllor?action=view_exam_result&id=test_id">
                     <i class="fa fa-eye" style="transform:translate(0px, -10px)"></i> View
                   </a>
                 </div><!-- /.box-body --></td></td>                    

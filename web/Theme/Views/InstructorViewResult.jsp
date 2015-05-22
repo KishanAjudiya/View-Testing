@@ -30,7 +30,7 @@
       
 
    
-
+      <%@include file="Left-side_User_Menu.jsp" %>
 
       <!-- /Code of left side user panel -->
 
@@ -45,7 +45,7 @@
           </h1>
           <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
+            <li class="active">Result</li>
           </ol>
         </section>
 
@@ -53,9 +53,9 @@
         <!-- Code of middel part -->
       
 
-         
-            <div class="col-xs-12">
-              <div class="box" style="margin-left: -10px">
+        <div class="row" style="margin-left:70px;margin-top:50px"
+            <div class="col-lg-10">
+              <div class="box">
                 
                 <div class="box-body table-responsive no-padding">
                   <table id="example1" class="table table-bordered table-striped">
@@ -74,15 +74,36 @@
                       <td>Java</td>
                       <td>11/6/2015</td>
                       <td><div class="box-body">
-                  <a class="btn btn-app">
+                              <a class="btn btn-app" href="Controllor?action=view_exam_result&id=testid">
                     <i class="fa fa-eye" style="transform:translate(0px, -10px)"></i> View
                   </a>
-                  <a class="btn btn-app">
+                  <a class="btn btn-app" data-toggle="modal" href="#myModal1">
                     <i class="fa fa-trash" style="transform:translate(0px, -10px)"></i> Delete
                   </a>
                 </div><!-- /.box-body --></td>
                       </tr>
                       
+                    
+   <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Delete</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+          <form action="Controllor?action=detete_exam_result" method="post" >
+              <input type="hidden" name="test_id" value=" value of exam id">
+        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        <button type="submit" class="btn btn-primary">Yes</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div> 
                     </tbody>
                     <tfoot>
                       <tr>
@@ -99,7 +120,7 @@
               </div><!-- /.box -->
             </div>
 
-
+      </div>
 
       <!-- /Code of middel part -->
 

@@ -138,14 +138,12 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 a{
-	color:#3c8dbc
-}
+	color: #87AFD2;}
 
 a:hover,a:active,a:focus{
 	outline:none;
 	text-decoration:none;
-	color:#72afd2
-}
+	color: #87AFD2;}
 
 .page-header{
 	margin:10px 0 20px 0;
@@ -3190,8 +3188,7 @@ table.text-center,table.text-center td,table.text-center th{
 }
 
 .lockscreen{
-	background:#d2d6de
-}
+	background: #D2D6DE;}
 
 .lockscreen-logo{
 	font-size:35px;
@@ -3212,7 +3209,8 @@ table.text-center,table.text-center td,table.text-center th{
 
 .lockscreen .lockscreen-name{
 	text-align:center;
-	font-weight:600
+	font-weight:600;
+	/* font-size: large; */
 }
 
 .lockscreen-item{
@@ -3266,12 +3264,11 @@ table.text-center,table.text-center td,table.text-center th{
 }
 
 .login-logo a,.register-logo a{
-	color:#444
-}
+	color: #000000;}
 
 .login-page,.register-page{
 	background:#d2d6de;
-	background-image: url(abc.jpg);
+	background-image: url(abc2.jpg);
 	background-repeat: no-repeat;
 }
 
@@ -3289,12 +3286,11 @@ table.text-center,table.text-center td,table.text-center th{
 }
 
 .login-box-body,.register-box-body{
-	background:#fff;
+	background: rgba(5, 0, 0, 0.56);
 	padding:20px;
 	color:#444;
 	border-top:0;
-	color:#666
-}
+	color: #FFFFFF;}
 
 .login-box-body .form-control-feedback,.register-box-body .form-control-feedback{
 	color:#777
@@ -3304,6 +3300,8 @@ table.text-center,table.text-center td,table.text-center th{
 	margin:0;
 	text-align:center;
 	padding:0 20px 20px 20px
+;
+	font-size: large;
 }
 
 .social-auth-links{
