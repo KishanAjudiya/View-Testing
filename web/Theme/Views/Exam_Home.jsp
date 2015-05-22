@@ -88,7 +88,7 @@
                   <a class="btn btn-app" data-toggle="modal" href="#myModal<%= i %>">
                     <i class="fa fa-eye" style="transform:translate(0px, -10px)"></i> View
                   </a>
-                  <a class="btn btn-app" href="Controllor?action=exam_priview">
+                  <a class="btn btn-app" href="Controllor?action=exam_preview">
                     <i class="fa fa-play" style="transform:translate(0px, -10px)"></i> Preview
                   </a>
                 </div><!-- /.box-body --></td>
