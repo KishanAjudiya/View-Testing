@@ -124,6 +124,11 @@
                         <option>D</option>
                       </select>
                     </div>
+                       <div class="form-group">
+                <label> Marks</label>
+                <input  class="form-control" type="text" id="marks" name="marks" required>
+                <div>
+                      
                    
                   </div><!-- /.form group -->
                  
@@ -132,6 +137,7 @@
                     <button type="submit" class="btn btn-primary pull-right">Update Qustion</button>
                   </div>
                   </div>
+           
       
                   
                 </form>
