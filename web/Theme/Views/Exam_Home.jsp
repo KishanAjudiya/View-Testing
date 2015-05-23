@@ -33,8 +33,7 @@
           </ol>
         </section>
         <!-- Code of middel part -->
-        <br>
-      <br>
+        
         <div class="col-lg-30 col-xs-6" >
               <!-- small box -->
               <div class="small-box bg-aqua-active">
@@ -51,8 +50,9 @@
               </div>
             </div>
             <!-- Table -->
+            <div class="row" style="margin-left: 40px;margin-top: 20px">
             <div class="col-xs-12">
-              <div class="box" style="padding-left: 60px">
+              <div class="box">
                 <div class="box-header">
                   <h3 class="box-title">Exam List</h3>
                   
@@ -169,6 +169,7 @@
                   </table>
                  </div><!-- /.box-body -->
               </div><!-- /.box -->
+            </div>
             </div>
       <!-- /Code of middel part -->
         <!-- Main content -->

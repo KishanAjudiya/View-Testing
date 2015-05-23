@@ -31,7 +31,7 @@
       <!-- Code of left side user panel -->
       
 
-   
+      <%@include file="Left-side_User_Menu.jsp" %>
 
 
       <!-- /Code of left side user panel -->
@@ -42,7 +42,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            User Privilege
+            Exam
             <small>Control panel</small>
           </h1>
           <ol class="breadcrumb">
@@ -54,12 +54,12 @@
 
         <!-- Code of middel part -->
                     
-
-        <form role="form" action="/ThemeSetting/NewServlet" method="post">
-<div class="row" style="margin-left: 40px;margin-top: 20px">
-              <div class="box" >
+        <div class="row" style="margin-left: 50px;margin-top: 20px">
+        <form role="form" action="Controllor?action=user_privilege" method="post">
+        <div class="col-xs-12">
+              <div class="box">
                 <div class="box-header">
-                  <h3 class="box-title">Update Privileges</h3>
+                  <h3 class="box-title">Exam List</h3>
                   
                 </div><!-- /.box-header -->
                 <div class="box-body table-responsive no-padding">
@@ -81,7 +81,7 @@
                       <tr>
                         <td>183</td>
                       <td>
-                          Name
+                          Kishan Ajudiya
                       </td>
                       <td>
                       <input type="checkbox">
@@ -102,27 +102,20 @@
                     <tfoot>
                       <tr>
                         <th>ID</th>
-                      <th>User Name</th>
+                      <th>Exam Description</th>
                       <th>Admin</th>
                       <th>Instructor</th>
                       <th>Student</th>
                         </tr>
                     </tfoot>
                   </table>
-                    <br>
-                    <br>
-                    <div >
-                    <button type="submit" class="btn btn-primary btn-primary pull-right">Update</button>
-                  </div>
-                   
                  </div><!-- /.box-body -->
-                  
               </div><!-- /.box -->
             </div>
 
 
 </form>
-
+</div>
       <!-- /Code of middel part -->
 
 

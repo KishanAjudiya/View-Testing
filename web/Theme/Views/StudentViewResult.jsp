@@ -53,9 +53,9 @@
         <!-- Code of middel part -->
       
             
-         
+        <div class="row" style="margin-left: 40px;margin-top: 20px">
             <div class="col-xs-12">
-              <div class="box" style="margin-left: -10px">
+              <div class="box">
                 
                 <div class="box-body table-responsive no-padding">
                   <table id="example1" class="table table-bordered table-striped">
@@ -96,7 +96,7 @@
                 </div><!-- /.box-body -->
               </div><!-- /.box -->
             </div>
-
+        </div>
 
 
       <!-- /Code of middel part -->
