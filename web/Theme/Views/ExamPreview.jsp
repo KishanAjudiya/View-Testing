@@ -33,7 +33,7 @@
       
 
    
-
+      <%@include file="Left-side_User_Menu.jsp" %>
 
       <!-- /Code of left side user panel -->
 

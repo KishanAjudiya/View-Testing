@@ -31,7 +31,7 @@
       <!-- Code of left side user panel -->
       
 
-   
+      <%@include file="Left-side_User_Menu.jsp" %>
 
 
       <!-- /Code of left side user panel -->
@@ -47,7 +47,7 @@
           </h1>
           <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
+            <li class="active">Access Privilege</li>
           </ol>
         </section>
 
@@ -55,7 +55,7 @@
         <!-- Code of middel part -->
                     
 
-        <form role="form" action="/ThemeSetting/NewServlet" method="post">
+        <form role="form" action="Controllor?action=action_privilege" method="post">
 <div class="row" style="margin-left: 40px;margin-top: 20px">
               <div class="box" >
                 <div class="box-header">
@@ -83,10 +83,10 @@
                           Requests
                       </td>
                       <td>
-                      <input type="checkbox">
+                      <input type="checkbox" id="student_pre" name="student_pre">
                       </td>
                       <td>
-                          <input type="checkbox">                          
+                          <input type="checkbox" id="instructor_pre" name="instructor_pre">                          
                       </td>
                       </tr>
                  

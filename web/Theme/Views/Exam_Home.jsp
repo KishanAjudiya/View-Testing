@@ -185,5 +185,18 @@
       <div class='control-sidebar-bg'></div>
     </div><!-- ./wrapper -->
     <%@include file="Main_include_js.jsp" %>
+    <script type="text/javascript">
+      $(function () {
+        $("#exam_list").dataTable();
+        $('#example2').dataTable({
+          "bPaginate": true,
+          "bLengthChange": false,
+          "bFilter": false,
+          "bSort": true,
+          "bInfo": true,
+          "bAutoWidth": false
+        });
+      });
+    </script>
   </body>
 </html>

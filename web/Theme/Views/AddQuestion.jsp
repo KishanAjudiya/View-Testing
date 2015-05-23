@@ -137,9 +137,9 @@
                     <button type="submit" class="btn btn-primary pull-right">Update Qustion</button>
                   </div>
                   </div>
-           
-      
-                  
+                  </div>
+      </div>
+        
                 </form>
              
 
@@ -161,9 +161,9 @@
 
 
         <!-- Main content -->
-      </div><!-- /.content-wrapper -->
+      <!-- /.content-wrapper -->
 
-      
+      </div>
       <!-- @#@#@ Control Sidebar -->      
       <aside class="control-sidebar control-sidebar-dark">                
         <!-- Create the tabs -->

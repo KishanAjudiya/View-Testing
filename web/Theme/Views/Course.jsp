@@ -4,11 +4,6 @@
     Author     : lokesh
 --%>
 
-<%-- 
-    Document   : StudentViewResult
-    Created on : 20 May, 2015, 3:21:55 AM
-    Author     : lokesh
---%>
 <!DOCTYPE html>
 <html>
   <head>
@@ -17,13 +12,8 @@
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
     <%@include file="Head_css.jsp" %>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
+    <script src="../plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <link href="validator.js"> 
   </head>
   <body class="skin-blue sidebar-mini">
     <div class="wrapper">
@@ -35,7 +25,7 @@
       <!-- Code of left side user panel -->
       
 
-   
+      <%@include file="Left-side_User_Menu.jsp" %>
 
 
       <!-- /Code of left side user panel -->
@@ -51,7 +41,7 @@
           </h1>
           <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
+            <li class="active">Course</li>
           </ol>
         </section>
 
@@ -81,11 +71,122 @@
                       <td>JAVA</td>
                       <td>70</td>
                       <td><div class="box-body">
-                  <a class="btn btn-app">
+                  <a class="btn btn-app" data-toggle="modal" href="#myModal">
                     <i class="fa fa-eye" style="transform:translate(0px, -10px)"></i> View
+                  </a>
+                  <a class="btn btn-app" data-toggle="modal" href="#myModal12">
+                    <i class="fa fa-edit" style="transform:translate(0px, -10px)" ></i> Edit
+                  </a>
+                  <a class="btn btn-app" data-toggle="modal" href="#myModal1">
+                    <i class="fa fa-trash" style="transform:translate(0px, -10px)" ></i> Delete
                   </a>
                 </div><!-- /.box-body --></td></td>                    
                       </tr>
+                      
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+          <div class="row" style="padding-left: 40px;padding-top: 10px;padding-right: 10px">
+          <label style="color:#fff; font-size:large;  width: 30%; background-color: rgb(108, 171, 227); height: 30px; text-align: right;" class="skin-blue"><b>Decs :</b> </label>
+          dfsadfasfd
+          </div>
+          <div class="row" style="padding-left: 40px;padding-top: 10px;padding-right: 10px">
+          <label style="color:#fff; font-size:large;  width: 30%; background-color: rgb(108, 171, 227); height: 30px; text-align: right;" class="skin-blue"><b>Decs :</b> </label>
+          dfsadfasfd
+          </div>
+          <div class="row" style="padding-left: 40px;padding-top: 10px;padding-right: 10px">
+          <label style="color:#fff; font-size:large;  width: 30%; background-color: rgb(108, 171, 227); height: 30px; text-align: right;" class="skin-blue"><b>Decs :</b> </label>
+          dfsadfasfd
+          </div>
+          <div class="row" style="padding-left: 40px;padding-top: 10px;padding-right: 10px">
+          <label style="color:#fff; font-size:large;  width: 30%; background-color: rgb(108, 171, 227); height: 30px; text-align: right;" class="skin-blue"><b>Decs :</b> </label>
+          dfsadfasfd
+          </div>
+          <div class="row" style="padding-left: 40px;padding-top: 10px;padding-right: 10px">
+          <label style="color:#fff; font-size:large;  width: 30%; background-color: rgb(108, 171, 227); height: 30px; text-align: right;" class="skin-blue"><b>Decs :</b> </label>
+          dfsadfasfd
+          </div>
+          </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+                    
+<div class="modal fade" id="myModal12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+          
+      <div class="box-body">
+                      <form role="form" data-toggle="validator" action="Controllor?action=update_Course" method="post">
+                      <div class="form-group">
+                      <label>Course ID</label>
+                      <input type="text" class="form-control" id="course_id" name="course_id" placeholder="Course ID" required/>
+                    </div>
+                    <div class="form-group">
+                      <label>Course Name</label>
+                      <input type="text" class="form-control" id="course_name" name="course_name" placeholder="Course Name" required/>
+                    </div>
+                    
+                    
+                    <div class="form-group">
+                      <label>Course Description</label>
+                      <input type="text" class="form-control" id="course_desc" name="course_desc" placeholder="Description" required/>
+                    </div>
+                    
+                  <div >
+                    <button type="submit" class="btn btn-primary btn-primary pull-right">Update</button>
+                  </div>
+                      </form>
+                  
+                  </div>    
+          
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+                    
+   <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Delete</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+          <form action="Controllor?action=detete_course" method="post" >
+              <input type="hidden" name="course_id" value="course_id">
+        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        <button type="submit" class="btn btn-primary">Yes</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>                 
+
+                      
+                      
                       
                     </tbody>
                     <tfoot>
@@ -106,7 +207,7 @@
                     <h3> Add Course</h3>
                     </div>
                 <div class="box-body">
-                      <form role="form" data-toggle="validator" action="Controllor?action=update_Course" method="post">
+                      <form role="form" data-toggle="validator" action="Controllor?action=create_Course" method="post">
                       <div class="form-group">
                       <label>Course ID</label>
                       <input type="text" class="form-control" id="course_id" name="course_id" placeholder="Course ID" required/>
@@ -125,11 +226,6 @@
                   <div >
                     <button type="submit" class="btn btn-primary btn-primary pull-right">Add</button>
                   </div>
-                    
-                    
-                    
-                   
-                   
                       </form>
                   
                   </div><!-- /.box-body -->
